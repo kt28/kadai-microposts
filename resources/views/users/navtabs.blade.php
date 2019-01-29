@@ -15,7 +15,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a href="{{ route('users.favorites', ['id' => $user->id]) }}" class="nav-link {{ Request::is('users/*/favorites') ? 'active' : '' }}">
+        <a href="{{ route('users.favorites', ['id' => $user->id]) }}" class="nav-link {{ Request::is('microposts/*/favorites') ? 'active' : '' }}">
             Favorites <span class="badge badge-secondary">{{ $count_favorites }}</span>
         </a>
     </li>
